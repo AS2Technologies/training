@@ -9,7 +9,7 @@ import random
 import string
 import sys
 
-tokens = ["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"]
+tokens = ["xxx"]
 search_strs = ["client_id" , "client_secret", "tenant_id" , "subscription_id"]
 qry = "client_id+client_secret+tenant_id+"
 # search_strs = ["access_key" , "secret_key"]

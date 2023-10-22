@@ -11,10 +11,6 @@ with open('azure_repo.txt', 'r') as file:
         # Process each line here
         url = line.strip()
 
-
-		# url = "https://github.com/LaVie-environment/oneazureweb/blob/93b9a45703dbb0771969090f614d5adf640e11d4/terraform.tfvars"
-		# url = "https://github.com/netevert/sentinel-attack/blob/3ec55c2d3db061acca38285ae6d697ef26e35b74/lab/main.tf"
-        # print(url)
         response = requests.get(url)
         if response.status_code == 200:
         	client_id = ""
