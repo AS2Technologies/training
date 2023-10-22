@@ -34,13 +34,13 @@ def get_secrets(urls):
                 decoded_bytes = base64.b64decode(text['content'])
                 decoded_string = decoded_bytes.decode('utf-8')
                 lines = decoded_string.split('\n')
-                with open('C:/Users/Arunk/OneDrive/Desktop/POC/github/azure_creds.txt', "a") as f:
+                with open('', "a") as f:
                         f.write("#############################################################################################################################" + "\n")
                         f.write(urls+"\n")
                 for search_str in search_strs:
                     for line in lines:
                         if search_str in line.lower():
-                            with open("C:\\Users\\Arunk\\OneDrive\\Desktop\\POC\\github\\azure_creds.txt", "a") as f:
+                            with open("", "a") as f:
                                 
                                 f.write(line+"\n")
                             print(line)
@@ -73,7 +73,7 @@ for random in randoms:
             # try:
                 repo_url = repo['html_url']
                 print(repo_url)
-                with open("C:\\Users\\Arunk\\OneDrive\\Desktop\\POC\\github\\azure_repo.txt", "a") as f:
+                with open("", "a") as f:
                     f.write(repo_url+"\n")
                 # get_secrets(repo_url)
             # except Exception as e:

@@ -76,8 +76,5 @@ with open('azure_repo.txt', 'r') as file:
 	        			pass
 	        	except: 
 	        		pass
-		    	# get_default_cli().invoke(['login', '--service-principal', '--username bd330f5d-22ed-487c-b29d-5d8e88eff76f', '--password "VDa8Q~asta-4OBc~kzb-sWxHjL0rnC4hh~wV2b-2" --tenant "cfd11325-8f42-48d9-8d1a-dd495c0916ae"'])
-		    	# az login --service-principal --username "bd330f5d-22ed-487c-b29d-5d8e88eff76f" --password "VDa8Q~asta-4OBc~kzb-sWxHjL0rnC4hh~wV2b-2" --tenant "cfd11325-8f42-48d9-8d1a-dd495c0916ae"
-
 
 
